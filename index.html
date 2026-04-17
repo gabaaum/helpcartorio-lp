@@ -14,7 +14,9 @@
               navy:   '#1E3A5F',
               blue:   '#A8C9E2',
               peach:  '#F4B8A5',
+              gold:   '#C9963A',
               light:  '#EEF5FA',
+              cream:  '#FEF5EA',
               card:   '#FFFFFF',
               border: '#D5E5F0',
             }
@@ -35,26 +37,30 @@
     body { background-color: #F2F7FB; color: #1E3A5F; font-family: 'Inter', sans-serif; }
     .gradient-navy { background: linear-gradient(135deg, #1E3A5F 0%, #0F2540 100%); }
     .gradient-peach { background: linear-gradient(135deg, #F4B8A5 0%, #E8A090 100%); }
-    .text-gradient  { background: linear-gradient(90deg, #1E3A5F, #A8C9E2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .text-gradient  { background: linear-gradient(90deg, #F4B8A5, #C9963A); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .text-gradient-cool { background: linear-gradient(90deg, #1E3A5F, #A8C9E2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .section-divider { border-top: 1px solid #D5E5F0; }
+    .section-warm { background: linear-gradient(180deg, #FEF5EA 0%, #FDF0E0 100%); }
+    .section-cool { background: linear-gradient(180deg, #EEF5FA 0%, #E4F0F8 100%); }
     .cta-btn {
-      background: linear-gradient(135deg, #1E3A5F 0%, #0F2540 100%);
+      background: linear-gradient(135deg, #C9963A 0%, #A87830 100%);
       transition: all 0.2s ease;
-      box-shadow: 0 4px 24px rgba(30,58,95,0.35);
+      box-shadow: 0 4px 24px rgba(201,150,58,0.40);
     }
     .cta-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 36px rgba(30,58,95,0.5);
+      box-shadow: 0 8px 36px rgba(201,150,58,0.55);
     }
     .cta-btn:active { transform: translateY(0); }
     .testimonial-card {
       background: #FFFFFF;
       border: 1px solid #D5E5F0;
+      border-top: 3px solid #F4B8A5;
       border-radius: 12px;
       box-shadow: 0 2px 12px rgba(30,58,95,0.06);
     }
     .price-badge {
-      background: linear-gradient(135deg, #F4B8A5, #E8A090);
+      background: linear-gradient(135deg, #C9963A, #A87830);
       border-radius: 999px;
     }
     .faq-answer {
@@ -69,43 +75,43 @@
       position: absolute;
       top: -100px; left: 50%;
       transform: translateX(-50%);
-      width: 800px; height: 600px;
-      background: radial-gradient(ellipse, rgba(168,201,226,0.18) 0%, transparent 70%);
+      width: 900px; height: 700px;
+      background: radial-gradient(ellipse, rgba(244,184,165,0.20) 0%, rgba(168,201,226,0.12) 50%, transparent 80%);
       pointer-events: none;
     }
     .step-card {
       background: #FFFFFF;
-      border: 1px solid #D5E5F0;
-      border-left: 4px solid #1E3A5F;
-      box-shadow: 0 2px 12px rgba(30,58,95,0.06);
+      border: 1px solid #E8D5C0;
+      border-left: 4px solid #C9963A;
+      box-shadow: 0 2px 12px rgba(201,150,58,0.08);
     }
     .guarantee-box {
-      border: 2px solid #A8C9E2;
+      border: 2px solid #C9963A;
       border-radius: 16px;
-      background: rgba(168,201,226,0.10);
+      background: linear-gradient(135deg, rgba(254,245,234,0.8) 0%, rgba(238,245,250,0.6) 100%);
     }
     .video-placeholder {
       background: #FFFFFF;
-      border: 2px solid #D5E5F0;
+      border: 2px solid #E8D5C0;
       border-radius: 12px;
       aspect-ratio: 16/9;
       position: relative;
       overflow: hidden;
-      box-shadow: 0 2px 20px rgba(30,58,95,0.10);
+      box-shadow: 0 2px 20px rgba(201,150,58,0.12);
     }
     .play-btn {
       width: 80px; height: 80px;
-      background: rgba(30,58,95,0.9);
+      background: linear-gradient(135deg, #C9963A, #A87830);
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       cursor: pointer;
       transition: all 0.2s;
-      box-shadow: 0 0 30px rgba(30,58,95,0.30);
+      box-shadow: 0 0 30px rgba(201,150,58,0.45);
     }
-    .play-btn:hover { transform: scale(1.08); background: rgba(30,58,95,1); }
+    .play-btn:hover { transform: scale(1.08); }
     .photo-placeholder {
-      background: #EEF5FA;
-      border: 2px dashed #D5E5F0;
+      background: #FEF5EA;
+      border: 2px dashed #E8D5C0;
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       overflow: hidden;
@@ -115,32 +121,32 @@
         -45deg,
         transparent,
         transparent 10px,
-        rgba(168,201,226,0.05) 10px,
-        rgba(168,201,226,0.05) 20px
+        rgba(201,150,58,0.04) 10px,
+        rgba(201,150,58,0.04) 20px
       );
     }
     .offer-box {
-      background: #FFFFFF;
-      border: 1px solid #A8C9E2;
+      background: linear-gradient(160deg, #FFFFFF 60%, #FEF5EA 100%);
+      border: 1px solid #C9963A;
       border-radius: 20px;
-      box-shadow: 0 4px 24px rgba(30,58,95,0.10);
+      box-shadow: 0 4px 32px rgba(201,150,58,0.15);
     }
     .badge-seals { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
     .seal {
-      background: #EEF5FA;
-      border: 1px solid #D5E5F0;
+      background: #FEF5EA;
+      border: 1px solid #E8D5C0;
       border-radius: 8px;
       padding: 6px 14px;
       font-size: 12px;
-      color: #4A6D8C;
+      color: #7A5830;
       display: flex; align-items: center; gap: 6px;
     }
     .founder-photo {
       width: 160px; height: 160px;
       border-radius: 50%;
-      border: 3px solid #A8C9E2;
+      border: 3px solid #C9963A;
       object-fit: cover;
-      background: #EEF5FA;
+      background: #FEF5EA;
       overflow: hidden;
     }
   </style>
@@ -194,7 +200,7 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  SEÇÃO DE DOR                                  -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="section-divider py-16 px-4 stripe-bg">
+  <section class="section-divider py-16 px-4 stripe-bg section-warm">
     <div class="max-w-2xl mx-auto">
 
       <h2 class="text-2xl md:text-4xl font-black text-center mb-10 leading-tight">
@@ -215,7 +221,7 @@
           Você sabe que tem capacidade para mais. Sabe que trouxe na mala experiência, inteligência, vontade de crescer. Só que nada disso parece ter espaço onde você está agora.
         </p>
 
-        <div class="border-l-4 border-brand-blue pl-6 my-8">
+        <div class="border-l-4 border-brand-gold pl-6 my-8">
           <p class="text-brand-navy font-semibold text-xl italic">
             "Todo final de mês é a mesma conta impossível."
           </p>
@@ -285,7 +291,7 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  PROVA SOCIAL / DEPOIMENTOS                    -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="section-divider py-16 px-4 bg-brand-light">
+  <section class="section-divider py-16 px-4 section-cool">
     <div class="max-w-5xl mx-auto">
 
       <div class="text-center mb-12">
@@ -305,7 +311,7 @@
             </div>
           </div>
           <div class="flex gap-1 mb-3">
-            <span class="text-brand-peach text-sm">★★★★★</span>
+            <span class="text-brand-gold text-sm">★★★★★</span>
           </div>
           <p class="text-slate-600 text-sm leading-relaxed italic">
             "Eu estava trabalhando como doméstica e não via saída. Depois que entendi como funciona esse mercado, consegui meus primeiros clientes em menos de 30 dias. Hoje faturou mais em um fim de semana do que em um mês de trabalho antes."
@@ -322,7 +328,7 @@
             </div>
           </div>
           <div class="flex gap-1 mb-3">
-            <span class="text-brand-peach text-sm">★★★★★</span>
+            <span class="text-brand-gold text-sm">★★★★★</span>
           </div>
           <p class="text-slate-600 text-sm leading-relaxed italic">
             "Nunca imaginei que ia conseguir empreender estando no exterior. O passo a passo é muito claro, muito prático. Comecei sem nenhuma experiência na área e em 60 dias já tinha estrutura montada e clientes ativos."
@@ -339,7 +345,7 @@
             </div>
           </div>
           <div class="flex gap-1 mb-3">
-            <span class="text-brand-peach text-sm">★★★★★</span>
+            <span class="text-brand-gold text-sm">★★★★★</span>
           </div>
           <p class="text-slate-600 text-sm leading-relaxed italic">
             "A Help Cartório me ensinou que eu podia transformar o que eu já sabia fazer em um negócio real. O conteúdo é direto ao ponto, sem enrolação. Senti que as mentoras estavam do meu lado do início ao fim."
@@ -356,7 +362,7 @@
             </div>
           </div>
           <div class="flex gap-1 mb-3">
-            <span class="text-brand-peach text-sm">★★★★★</span>
+            <span class="text-brand-gold text-sm">★★★★★</span>
           </div>
           <p class="text-slate-600 text-sm leading-relaxed italic">
             "Passei 4 anos no Canadá sem saber que existia essa oportunidade. Quando vi a proposta pensei que era bom demais para ser verdade. Não era. Hoje tenho clientes em 3 países e trabalho no meu horário."
@@ -373,7 +379,7 @@
             </div>
           </div>
           <div class="flex gap-1 mb-3">
-            <span class="text-brand-peach text-sm">★★★★★</span>
+            <span class="text-brand-gold text-sm">★★★★★</span>
           </div>
           <p class="text-slate-600 text-sm leading-relaxed italic">
             "O que mais me surpreendeu foi a simplicidade. Parecia complicado, mas quando você entende o modelo, percebe que é completamente viável. Recomendo de olhos fechados para qualquer brasileiro que quer sair do subemprego."
@@ -390,7 +396,7 @@
             </div>
           </div>
           <div class="flex gap-1 mb-3">
-            <span class="text-brand-peach text-sm">★★★★★</span>
+            <span class="text-brand-gold text-sm">★★★★★</span>
           </div>
           <p class="text-slate-600 text-sm leading-relaxed italic">
             "Estava cético no começo. Mas o conteúdo do Passo 3 — o de execução — mudou completamente minha perspectiva. Em 30 dias já tinha faturado meu primeiro pagamento. Isso é real."
@@ -424,10 +430,10 @@
 
         <!-- Passo 1 -->
         <div class="step-card rounded-xl p-8 flex gap-6 items-start">
-          <div class="flex-shrink-0 w-14 h-14 bg-brand-navy text-white rounded-full flex items-center justify-center font-black text-xl">1</div>
+          <div class="flex-shrink-0 w-14 h-14 rounded-full text-white flex items-center justify-center font-black text-xl" style="background:linear-gradient(135deg,#C9963A,#A87830)">1</div>
           <div>
             <h3 class="text-xl md:text-2xl font-black text-brand-navy mb-2">
-              Passo 1 — <span class="text-brand-blue">Visão</span>
+              Passo 1 — <span class="text-brand-gold">Visão</span>
             </h3>
             <p class="text-slate-600 text-base leading-relaxed">
               Empreendedorismo internacional com propósito e meta.
@@ -439,10 +445,10 @@
 
         <!-- Passo 2 -->
         <div class="step-card rounded-xl p-8 flex gap-6 items-start">
-          <div class="flex-shrink-0 w-14 h-14 bg-brand-navy text-white rounded-full flex items-center justify-center font-black text-xl">2</div>
+          <div class="flex-shrink-0 w-14 h-14 rounded-full text-white flex items-center justify-center font-black text-xl" style="background:linear-gradient(135deg,#C9963A,#A87830)">2</div>
           <div>
             <h3 class="text-xl md:text-2xl font-black text-brand-navy mb-2">
-              Passo 2 — <span class="text-brand-blue">Estrutura</span>
+              Passo 2 — <span class="text-brand-gold">Estrutura</span>
             </h3>
             <p class="text-slate-600 text-base leading-relaxed">
               Como montar o negócio passo a passo.
@@ -454,10 +460,10 @@
 
         <!-- Passo 3 -->
         <div class="step-card rounded-xl p-8 flex gap-6 items-start">
-          <div class="flex-shrink-0 w-14 h-14 bg-brand-navy text-white rounded-full flex items-center justify-center font-black text-xl">3</div>
+          <div class="flex-shrink-0 w-14 h-14 rounded-full text-white flex items-center justify-center font-black text-xl" style="background:linear-gradient(135deg,#C9963A,#A87830)">3</div>
           <div>
             <h3 class="text-xl md:text-2xl font-black text-brand-navy mb-2">
-              Passo 3 — <span class="text-brand-blue">Execução</span>
+              Passo 3 — <span class="text-brand-gold">Execução</span>
             </h3>
             <p class="text-slate-600 text-base leading-relaxed">
               Como sair do papel nos primeiros 30 dias.
@@ -475,11 +481,11 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  PRESENTE EXCLUSIVO                            -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="section-divider py-16 px-4 bg-brand-light">
+  <section class="section-divider py-16 px-4 section-cool">
     <div class="max-w-2xl mx-auto text-center">
 
       <h2 class="text-2xl md:text-3xl font-black mb-6">
-        Checklist <span class="text-brand-peach">"Do zero à execução"</span>
+        Checklist <span class="text-brand-gold">"Do zero à execução"</span>
       </h2>
 
       <div class="bg-brand-light border border-brand-border rounded-2xl p-8 text-left max-w-lg mx-auto">
@@ -487,10 +493,10 @@
           Um checklist completo e prático com cada ação que você precisa tomar para sair do zero e executar seu negócio nos primeiros 30 dias. Organize, acompanhe e celebre cada conquista no seu caminho.
         </p>
         <div class="space-y-3">
-          <div class="flex items-center gap-3 text-slate-600"><span class="text-brand-navy text-lg">✓</span> Cada tarefa dos 3 passos organizada</div>
-          <div class="flex items-center gap-3 text-slate-600"><span class="text-brand-navy text-lg">✓</span> Ordem de execução sem dúvidas</div>
-          <div class="flex items-center gap-3 text-slate-600"><span class="text-brand-navy text-lg">✓</span> Marcos de 7, 15 e 30 dias</div>
-          <div class="flex items-center gap-3 text-slate-600"><span class="text-brand-navy text-lg">✓</span> Acesso imediato junto ao curso</div>
+          <div class="flex items-center gap-3 text-slate-600"><span class="text-brand-gold text-lg">✓</span> Cada tarefa dos 3 passos organizada</div>
+          <div class="flex items-center gap-3 text-slate-600"><span class="text-brand-gold text-lg">✓</span> Ordem de execução sem dúvidas</div>
+          <div class="flex items-center gap-3 text-slate-600"><span class="text-brand-gold text-lg">✓</span> Marcos de 7, 15 e 30 dias</div>
+          <div class="flex items-center gap-3 text-slate-600"><span class="text-brand-gold text-lg">✓</span> Acesso imediato junto ao curso</div>
         </div>
       </div>
 
@@ -511,9 +517,9 @@
 
         <!-- O que está incluso -->
         <div class="mb-8 text-left max-w-sm mx-auto space-y-3">
-          <div class="flex items-center gap-3 text-gray-200"><span class="text-brand-navy text-lg font-bold">✓</span> Passo 1 — Visão completa</div>
-          <div class="flex items-center gap-3 text-gray-200"><span class="text-brand-navy text-lg font-bold">✓</span> Passo 2 — Estrutura do negócio</div>
-          <div class="flex items-center gap-3 text-gray-200"><span class="text-brand-navy text-lg font-bold">✓</span> Passo 3 — Execução nos primeiros 30 dias</div>
+          <div class="flex items-center gap-3 text-gray-200"><span class="text-brand-gold text-lg font-bold">✓</span> Passo 1 — Visão completa</div>
+          <div class="flex items-center gap-3 text-gray-200"><span class="text-brand-gold text-lg font-bold">✓</span> Passo 2 — Estrutura do negócio</div>
+          <div class="flex items-center gap-3 text-gray-200"><span class="text-brand-gold text-lg font-bold">✓</span> Passo 3 — Execução nos primeiros 30 dias</div>
           <div class="flex items-center gap-3 text-gray-200"><span class="text-brand-peach text-lg font-bold">🎁</span> <strong class="text-brand-navy">Bônus:</strong> Checklist "Do zero à execução"</div>
         </div>
 
@@ -523,7 +529,7 @@
         <div class="mb-6">
           <p class="text-slate-400 text-base line-through mb-1">R$ XXX</p>
           <p class="text-5xl md:text-6xl font-black text-brand-navy mb-2">
-            R$ <span class="text-brand-navy">XX,XX</span>
+            R$ <span class="text-brand-gold">XX,XX</span>
           </p>
           <p class="text-slate-500 text-base">ou em até X vezes de R$ X,XX</p>
         </div>
@@ -556,7 +562,7 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  GARANTIA                                      -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="section-divider py-20 px-4 bg-brand-light">
+  <section class="section-divider py-20 px-4 section-cool">
     <div class="max-w-2xl mx-auto">
 
       <div class="guarantee-box p-8 md:p-12 text-center">
@@ -564,8 +570,8 @@
         <!-- Selo -->
         <div class="w-28 h-28 mx-auto mb-6 relative">
           <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-            <polygon points="100,10 120,40 155,35 145,70 170,90 145,110 155,145 120,140 100,170 80,140 45,145 55,110 30,90 55,70 45,35 80,40" fill="#EEF5FA" stroke="#1E3A5F" stroke-width="3"/>
-            <text x="100" y="80" text-anchor="middle" fill="#1E3A5F" font-size="14" font-weight="900" font-family="Inter,sans-serif">GARANTIA</text>
+            <polygon points="100,10 120,40 155,35 145,70 170,90 145,110 155,145 120,140 100,170 80,140 45,145 55,110 30,90 55,70 45,35 80,40" fill="#FEF5EA" stroke="#C9963A" stroke-width="3"/>
+            <text x="100" y="80" text-anchor="middle" fill="#C9963A" font-size="14" font-weight="900" font-family="Inter,sans-serif">GARANTIA</text>
             <text x="100" y="108" text-anchor="middle" fill="#1E3A5F" font-size="32" font-weight="900" font-family="Inter,sans-serif">07</text>
             <text x="100" y="128" text-anchor="middle" fill="#4A6D8C" font-size="11" font-family="Inter,sans-serif">DIAS</text>
           </svg>
@@ -574,7 +580,7 @@
         <h2 class="text-2xl md:text-3xl font-black mb-4 text-brand-navy">Risco zero. Decisão sem pressão.</h2>
 
         <p class="text-slate-600 text-base leading-relaxed max-w-lg mx-auto">
-          Você tem <strong class="text-brand-navy">07 dias</strong> para assistir, avaliar e decidir se esse investimento faz sentido para você. Se por qualquer motivo não ficar satisfeito, basta pedir o reembolso e devolvemos 100% do seu dinheiro — sem perguntas, sem burocracia.
+          Você tem <strong class="text-brand-gold">07 dias</strong> para assistir, avaliar e decidir se esse investimento faz sentido para você. Se por qualquer motivo não ficar satisfeito, basta pedir o reembolso e devolvemos 100% do seu dinheiro — sem perguntas, sem burocracia.
         </p>
 
         <p class="text-slate-400 text-sm mt-4">Acreditamos tanto nesse conteúdo que assumimos todo o risco por você.</p>
@@ -612,10 +618,10 @@
               style="object-position: center top;"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
             />
-            <div style="display:none" class="w-full h-full bg-brand-light items-center justify-center text-5xl font-black text-brand-navy">K</div>
+            <div style="display:none" class="w-full h-full bg-brand-cream items-center justify-center text-5xl font-black text-brand-gold">K</div>
           </div>
           <h3 class="text-xl font-black text-brand-navy mb-1">Kelen Souza</h3>
-          <p class="text-brand-blue text-sm font-semibold mb-3">Cofundadora · Help Cartório</p>
+          <p class="text-brand-gold text-sm font-semibold mb-3">Cofundadora · Help Cartório</p>
           <p class="text-slate-500 text-sm leading-relaxed">
             Especialista em serviços internacionais e empreendedorismo para brasileiros no exterior. Construiu a Help Cartório a partir da própria experiência de viver fora e perceber a lacuna que existia no mercado.
           </p>
@@ -632,10 +638,10 @@
               style="object-position: center top;"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
             />
-            <div style="display:none" class="w-full h-full bg-brand-light items-center justify-center text-5xl font-black text-brand-navy">G</div>
+            <div style="display:none" class="w-full h-full bg-brand-cream items-center justify-center text-5xl font-black text-brand-gold">G</div>
           </div>
           <h3 class="text-xl font-black text-brand-navy mb-1">Dra. Giulya Naves</h3>
-          <p class="text-brand-blue text-sm font-semibold mb-3">Cofundadora · Especialista Jurídica</p>
+          <p class="text-brand-gold text-sm font-semibold mb-3">Cofundadora · Especialista Jurídica</p>
           <p class="text-slate-500 text-sm leading-relaxed">
             Advogada com expertise em direito notarial e registral. Garante que todo o modelo de negócio ensinado na Help Cartório é 100% legal, estruturado e seguro para quem quer empreender com serviços internacionais.
           </p>
@@ -649,7 +655,7 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  FAQ                                           -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="section-divider py-20 px-4 bg-brand-light">
+  <section class="section-divider py-20 px-4 section-cool">
     <div class="max-w-2xl mx-auto">
 
       <div class="text-center mb-12">
@@ -662,7 +668,7 @@
         <div class="faq-item bg-white border border-brand-border rounded-xl overflow-hidden">
           <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
             <span class="font-semibold text-brand-navy text-base">O que exatamente são os "3 primeiros passos"?</span>
-            <span class="faq-icon text-brand-navy text-2xl font-black flex-shrink-0">+</span>
+            <span class="faq-icon text-brand-gold text-2xl font-black flex-shrink-0">+</span>
           </button>
           <div class="faq-answer px-6 text-slate-500 text-sm leading-relaxed">
             <div class="pb-5">
@@ -675,7 +681,7 @@
         <div class="faq-item bg-white border border-brand-border rounded-xl overflow-hidden">
           <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
             <span class="font-semibold text-brand-navy text-base">Preciso ter formação jurídica ou na área de cartório?</span>
-            <span class="faq-icon text-brand-navy text-2xl font-black flex-shrink-0">+</span>
+            <span class="faq-icon text-brand-gold text-2xl font-black flex-shrink-0">+</span>
           </button>
           <div class="faq-answer px-6 text-slate-500 text-sm leading-relaxed">
             <div class="pb-5">
@@ -688,7 +694,7 @@
         <div class="faq-item bg-white border border-brand-border rounded-xl overflow-hidden">
           <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
             <span class="font-semibold text-brand-navy text-base">Funciona para qualquer país fora do Brasil?</span>
-            <span class="faq-icon text-brand-navy text-2xl font-black flex-shrink-0">+</span>
+            <span class="faq-icon text-brand-gold text-2xl font-black flex-shrink-0">+</span>
           </button>
           <div class="faq-answer px-6 text-slate-500 text-sm leading-relaxed">
             <div class="pb-5">
@@ -701,7 +707,7 @@
         <div class="faq-item bg-white border border-brand-border rounded-xl overflow-hidden">
           <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
             <span class="font-semibold text-brand-navy text-base">Quanto tempo preciso dedicar por semana?</span>
-            <span class="faq-icon text-brand-navy text-2xl font-black flex-shrink-0">+</span>
+            <span class="faq-icon text-brand-gold text-2xl font-black flex-shrink-0">+</span>
           </button>
           <div class="faq-answer px-6 text-slate-500 text-sm leading-relaxed">
             <div class="pb-5">
@@ -714,7 +720,7 @@
         <div class="faq-item bg-white border border-brand-border rounded-xl overflow-hidden">
           <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
             <span class="font-semibold text-brand-navy text-base">Já existe muita concorrência nesse mercado?</span>
-            <span class="faq-icon text-brand-navy text-2xl font-black flex-shrink-0">+</span>
+            <span class="faq-icon text-brand-gold text-2xl font-black flex-shrink-0">+</span>
           </button>
           <div class="faq-answer px-6 text-slate-500 text-sm leading-relaxed">
             <div class="pb-5">
@@ -727,7 +733,7 @@
         <div class="faq-item bg-white border border-brand-border rounded-xl overflow-hidden">
           <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
             <span class="font-semibold text-brand-navy text-base">Quando terei acesso ao conteúdo após a compra?</span>
-            <span class="faq-icon text-brand-navy text-2xl font-black flex-shrink-0">+</span>
+            <span class="faq-icon text-brand-gold text-2xl font-black flex-shrink-0">+</span>
           </button>
           <div class="faq-answer px-6 text-slate-500 text-sm leading-relaxed">
             <div class="pb-5">
@@ -740,7 +746,7 @@
         <div class="faq-item bg-white border border-brand-border rounded-xl overflow-hidden">
           <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
             <span class="font-semibold text-brand-navy text-base">Quais formas de pagamento são aceitas?</span>
-            <span class="faq-icon text-brand-navy text-2xl font-black flex-shrink-0">+</span>
+            <span class="faq-icon text-brand-gold text-2xl font-black flex-shrink-0">+</span>
           </button>
           <div class="faq-answer px-6 text-slate-500 text-sm leading-relaxed">
             <div class="pb-5">
@@ -753,7 +759,7 @@
         <div class="faq-item bg-white border border-brand-border rounded-xl overflow-hidden">
           <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
             <span class="font-semibold text-brand-navy text-base">E se eu não gostar? Existe garantia?</span>
-            <span class="faq-icon text-brand-navy text-2xl font-black flex-shrink-0">+</span>
+            <span class="faq-icon text-brand-gold text-2xl font-black flex-shrink-0">+</span>
           </button>
           <div class="faq-answer px-6 text-slate-500 text-sm leading-relaxed">
             <div class="pb-5">
@@ -766,7 +772,7 @@
         <div class="faq-item bg-white border border-brand-border rounded-xl overflow-hidden">
           <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
             <span class="font-semibold text-brand-navy text-base">Esse negócio é legal? Tem respaldo jurídico?</span>
-            <span class="faq-icon text-brand-navy text-2xl font-black flex-shrink-0">+</span>
+            <span class="faq-icon text-brand-gold text-2xl font-black flex-shrink-0">+</span>
           </button>
           <div class="faq-answer px-6 text-slate-500 text-sm leading-relaxed">
             <div class="pb-5">
@@ -779,7 +785,7 @@
         <div class="faq-item bg-white border border-brand-border rounded-xl overflow-hidden">
           <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
             <span class="font-semibold text-brand-navy text-base">Consigo fazer isso mesmo trabalhando em período integral?</span>
-            <span class="faq-icon text-brand-navy text-2xl font-black flex-shrink-0">+</span>
+            <span class="faq-icon text-brand-gold text-2xl font-black flex-shrink-0">+</span>
           </button>
           <div class="faq-answer px-6 text-slate-500 text-sm leading-relaxed">
             <div class="pb-5">
