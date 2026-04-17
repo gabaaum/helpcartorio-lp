@@ -144,12 +144,12 @@
 <body class="antialiased">
 
   <!-- ═══════════════════════════════════════════════ -->
-  <!--  HERO — foto à esquerda, texto à direita       -->
+  <!--  HERO — texto à esquerda, foto à direita       -->
   <!-- ═══════════════════════════════════════════════ -->
   <section class="relative overflow-hidden" style="min-height:640px;">
 
-    <!-- FOTO — coluna esquerda, posicionada absolutamente em desktop -->
-    <div class="hidden md:block absolute inset-y-0 left-0 z-0"
+    <!-- FOTO — coluna direita, posicionada absolutamente em desktop -->
+    <div class="hidden md:block absolute inset-y-0 right-0 z-0"
          style="width:48%;">
       <img
         src="images/founders.png"
@@ -163,12 +163,12 @@
       <!-- fade inferior -->
       <div class="absolute bottom-0 left-0 right-0 h-32"
            style="background:linear-gradient(to top,#000 0%,transparent 100%);"></div>
-      <!-- fade lado esquerdo -->
-      <div class="absolute inset-y-0 left-0 w-16"
-           style="background:linear-gradient(to right,#000 0%,transparent 100%);"></div>
-      <!-- fade lado direito — dissolve para o fundo preto -->
-      <div class="absolute inset-y-0 right-0 w-40"
+      <!-- fade lado direito -->
+      <div class="absolute inset-y-0 right-0 w-16"
            style="background:linear-gradient(to left,#000 0%,transparent 100%);"></div>
+      <!-- fade lado esquerdo — dissolve para o fundo preto -->
+      <div class="absolute inset-y-0 left-0 w-40"
+           style="background:linear-gradient(to right,#000 0%,transparent 100%);"></div>
     </div>
 
     <!-- FOTO mobile — aparece acima do texto em telas pequenas -->
@@ -186,11 +186,11 @@
            style="background:linear-gradient(to left,#000 0%,transparent 100%);"></div>
     </div>
 
-    <!-- TEXTO — coluna direita -->
-    <div class="relative z-10 flex items-center justify-end min-h-full px-4 py-16"
+    <!-- TEXTO — coluna esquerda -->
+    <div class="relative z-10 flex items-center justify-start min-h-full px-4 py-16"
          style="min-height:640px;">
-      <div class="w-full md:w-1/2 md:pl-8 text-center md:text-left max-w-xl ml-auto">
-        <div class="hero-glow" style="left:auto;right:-100px;top:-80px;"></div>
+      <div class="w-full md:w-1/2 md:pr-8 text-center md:text-left max-w-xl mr-auto">
+        <div class="hero-glow" style="left:-100px;top:-80px;"></div>
 
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-6">
           3 Primeiros Passos para<br/>
