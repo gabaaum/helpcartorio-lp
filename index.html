@@ -144,9 +144,33 @@
 <body class="antialiased">
 
   <!-- ═══════════════════════════════════════════════ -->
+  <!--  FOUNDERS PHOTO — hero com blur/fade           -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="relative w-full overflow-hidden" style="max-height:680px;">
+    <img
+      src="images/founders.png"
+      alt="Kelen Souza e Dra. Giulya Naves — Help Cartório"
+      class="w-full object-cover object-top"
+      style="max-height:680px; display:block;"
+    />
+    <!-- fade lateral esquerdo -->
+    <div class="absolute inset-y-0 left-0 w-24 md:w-40"
+         style="background: linear-gradient(to right, #000 0%, transparent 100%);"></div>
+    <!-- fade lateral direito -->
+    <div class="absolute inset-y-0 right-0 w-24 md:w-40"
+         style="background: linear-gradient(to left, #000 0%, transparent 100%);"></div>
+    <!-- fade inferior (principal) -->
+    <div class="absolute bottom-0 left-0 right-0 h-56"
+         style="background: linear-gradient(to top, #000 0%, transparent 100%);"></div>
+    <!-- fade superior -->
+    <div class="absolute top-0 left-0 right-0 h-20"
+         style="background: linear-gradient(to bottom, #000 0%, transparent 100%);"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ -->
   <!--  HERO / VSL                                    -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="relative overflow-hidden py-16 px-4">
+  <section class="relative overflow-hidden py-8 px-4">
     <div class="hero-glow"></div>
     <div class="max-w-3xl mx-auto text-center relative z-10">
 
