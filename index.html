@@ -144,68 +144,83 @@
 <body class="antialiased">
 
   <!-- ═══════════════════════════════════════════════ -->
-  <!--  FOUNDERS PHOTO — hero com blur/fade           -->
+  <!--  HERO — foto à esquerda, texto à direita       -->
   <!-- ═══════════════════════════════════════════════ -->
-  <div class="relative w-full overflow-hidden" style="max-height:680px;">
-    <img
-      src="images/founders.png"
-      alt="Kelen Souza e Dra. Giulya Naves — Help Cartório"
-      class="w-full object-cover object-top"
-      style="max-height:680px; display:block;"
-    />
-    <!-- fade lateral esquerdo -->
-    <div class="absolute inset-y-0 left-0 w-24 md:w-40"
-         style="background: linear-gradient(to right, #000 0%, transparent 100%);"></div>
-    <!-- fade lateral direito -->
-    <div class="absolute inset-y-0 right-0 w-24 md:w-40"
-         style="background: linear-gradient(to left, #000 0%, transparent 100%);"></div>
-    <!-- fade inferior (principal) -->
-    <div class="absolute bottom-0 left-0 right-0 h-56"
-         style="background: linear-gradient(to top, #000 0%, transparent 100%);"></div>
-    <!-- fade superior -->
-    <div class="absolute top-0 left-0 right-0 h-20"
-         style="background: linear-gradient(to bottom, #000 0%, transparent 100%);"></div>
-  </div>
+  <section class="relative overflow-hidden" style="min-height:640px;">
 
-  <!-- ═══════════════════════════════════════════════ -->
-  <!--  HERO / VSL                                    -->
-  <!-- ═══════════════════════════════════════════════ -->
-  <section class="relative overflow-hidden py-8 px-4">
-    <div class="hero-glow"></div>
-    <div class="max-w-3xl mx-auto text-center relative z-10">
+    <!-- FOTO — coluna esquerda, posicionada absolutamente em desktop -->
+    <div class="hidden md:block absolute inset-y-0 left-0 z-0"
+         style="width:48%;">
+      <img
+        src="images/founders.png"
+        alt="Kelen Souza e Dra. Giulya Naves — Help Cartório"
+        class="w-full h-full object-cover object-center"
+        style="display:block;"
+      />
+      <!-- fade topo -->
+      <div class="absolute top-0 left-0 right-0 h-20"
+           style="background:linear-gradient(to bottom,#000 0%,transparent 100%);"></div>
+      <!-- fade inferior -->
+      <div class="absolute bottom-0 left-0 right-0 h-32"
+           style="background:linear-gradient(to top,#000 0%,transparent 100%);"></div>
+      <!-- fade lado esquerdo -->
+      <div class="absolute inset-y-0 left-0 w-16"
+           style="background:linear-gradient(to right,#000 0%,transparent 100%);"></div>
+      <!-- fade lado direito — dissolve para o fundo preto -->
+      <div class="absolute inset-y-0 right-0 w-40"
+           style="background:linear-gradient(to left,#000 0%,transparent 100%);"></div>
+    </div>
 
-      <!-- Main Headline -->
-      <h1 class="text-3xl md:text-5xl font-black leading-tight mb-6">
-        3 Primeiros Passos para<br/>
-        <span class="text-gradient">Construir um Negócio Internacional</span>
-      </h1>
+    <!-- FOTO mobile — aparece acima do texto em telas pequenas -->
+    <div class="md:hidden relative w-full overflow-hidden" style="height:320px;">
+      <img
+        src="images/founders.png"
+        alt="Kelen Souza e Dra. Giulya Naves — Help Cartório"
+        class="w-full h-full object-cover object-top"
+      />
+      <div class="absolute bottom-0 left-0 right-0 h-32"
+           style="background:linear-gradient(to top,#000 0%,transparent 100%);"></div>
+      <div class="absolute inset-y-0 left-0 w-10"
+           style="background:linear-gradient(to right,#000 0%,transparent 100%);"></div>
+      <div class="absolute inset-y-0 right-0 w-10"
+           style="background:linear-gradient(to left,#000 0%,transparent 100%);"></div>
+    </div>
 
-      <!-- Sub-headline -->
-      <p class="text-gray-300 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
-        Você saiu do Brasil para construir uma vida melhor. Mas a vida que você tem hoje é a que você planejou?
-        <br/><br/>
-        Neste vídeo, vamos te mostrar como brasileiros no exterior estão saindo do subemprego e construindo renda própria com serviços internacionais, <strong class="text-white">mesmo sem diploma reconhecido, mesmo começando do zero.</strong>
-      </p>
+    <!-- TEXTO — coluna direita -->
+    <div class="relative z-10 flex items-center justify-end min-h-full px-4 py-16"
+         style="min-height:640px;">
+      <div class="w-full md:w-1/2 md:pl-8 text-center md:text-left max-w-xl ml-auto">
+        <div class="hero-glow" style="left:auto;right:-100px;top:-80px;"></div>
 
-      <!-- VSL Placeholder -->
-      <div class="video-placeholder mb-8 max-w-2xl mx-auto">
-        <div class="absolute inset-0 flex flex-col items-center justify-center gap-4">
-          <div class="play-btn" onclick="this.innerHTML='<span style=\'font-size:1.5rem\'>▶</span>'; this.style.opacity='0.5'">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-6">
+          3 Primeiros Passos para<br/>
+          <span class="text-gradient">Construir um Negócio Internacional</span>
+        </h1>
+
+        <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-10">
+          Você saiu do Brasil para construir uma vida melhor. Mas a vida que você tem hoje é a que você planejou?
+          <br/><br/>
+          Neste vídeo, vamos te mostrar como brasileiros no exterior estão saindo do subemprego e construindo renda própria com serviços internacionais, <strong class="text-white">mesmo sem diploma reconhecido, mesmo começando do zero.</strong>
+        </p>
+
+        <!-- VSL Placeholder -->
+        <div class="video-placeholder mb-8 w-full">
+          <div class="absolute inset-0 flex flex-col items-center justify-center gap-4">
+            <div class="play-btn" onclick="this.innerHTML='<span style=\'font-size:1.5rem\'>▶</span>'; this.style.opacity='0.5'">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <p class="text-gray-500 text-sm">Assista ao vídeo completo</p>
           </div>
-          <p class="text-gray-500 text-sm">Assista ao vídeo completo</p>
+          <img src="" alt="" class="w-full h-full object-cover opacity-0 absolute inset-0" />
         </div>
-        <img src="" alt="" class="w-full h-full object-cover opacity-0 absolute inset-0" />
+
+        <a href="#oferta" class="cta-btn inline-block px-10 py-5 text-white font-black text-lg md:text-xl rounded-full uppercase tracking-wide">
+          Quero conhecer os 3 primeiros passos
+          <span class="ml-2">→</span>
+        </a>
+
+        <p class="text-gray-600 text-xs mt-4">Acesso imediato · Compra 100% segura</p>
       </div>
-
-      <!-- CTA Button -->
-      <a href="#oferta" class="cta-btn inline-block px-10 py-5 text-white font-black text-lg md:text-xl rounded-full uppercase tracking-wide">
-        Quero conhecer os 3 primeiros passos
-        <span class="ml-2">→</span>
-      </a>
-
-      <!-- Trust micro-copy -->
-      <p class="text-gray-600 text-xs mt-4">Acesso imediato · Compra 100% segura</p>
     </div>
   </section>
 
