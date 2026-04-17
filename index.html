@@ -32,13 +32,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
-    body { background-color: #F2F7FB; color: #1E3A5F; font-family: 'Inter', sans-serif; }
+    body { background-color: #FFFFFF; color: #1E3A5F; font-family: 'Inter', sans-serif; }
     .gradient-navy { background: linear-gradient(135deg, #1E3A5F 0%, #0F2540 100%); }
+    .section-navy  { background: linear-gradient(135deg, #1E3A5F 0%, #0F2540 100%); }
     .text-gradient  { background: linear-gradient(90deg, #1E3A5F, #C9963A); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    .text-gradient-cool { background: linear-gradient(90deg, #1E3A5F, #A8C9E2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    .section-divider { border-top: 1px solid #D5E5F0; }
-    .section-warm { background: linear-gradient(180deg, #EEF5FA 0%, #E4F0F8 100%); }
-    .section-cool { background: linear-gradient(180deg, #E4F0F8 0%, #D8EAF5 100%); }
+    .text-gradient-gold { background: linear-gradient(90deg, #C9963A, #E6B84A); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .section-divider { border-top: 1px solid #E2E8F0; }
+    .section-gray { background: #F4F6F9; }
+    .section-white { background: #FFFFFF; }
     .cta-btn {
       background: linear-gradient(135deg, #C9963A 0%, #A87830 100%);
       transition: all 0.2s ease;
@@ -68,14 +69,7 @@
     .faq-answer.open { max-height: 600px; }
     .faq-icon { transition: transform 0.3s ease; }
     .faq-icon.open { transform: rotate(45deg); }
-    .hero-glow {
-      position: absolute;
-      top: -100px; left: 50%;
-      transform: translateX(-50%);
-      width: 900px; height: 700px;
-      background: radial-gradient(ellipse, rgba(30,58,95,0.12) 0%, rgba(168,201,226,0.10) 50%, transparent 80%);
-      pointer-events: none;
-    }
+    .hero-glow { display: none; }
     .step-card {
       background: #FFFFFF;
       border: 1px solid #D5E5F0;
@@ -113,15 +107,7 @@
       display: flex; align-items: center; justify-content: center;
       overflow: hidden;
     }
-    .stripe-bg {
-      background: repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 10px,
-        rgba(201,150,58,0.04) 10px,
-        rgba(201,150,58,0.04) 20px
-      );
-    }
+    .stripe-bg { /* removido */ }
     .offer-box {
       background: linear-gradient(160deg, #FFFFFF 60%, #EEF5FA 100%);
       border: 1px solid #1E3A5F;
@@ -153,26 +139,25 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  HERO                                          -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="relative overflow-hidden" style="min-height:640px;">
+  <section class="relative overflow-hidden section-navy" style="min-height:640px;">
     <div class="relative z-10 flex items-center justify-center min-h-full px-4 py-16"
          style="min-height:640px;">
       <div class="w-full max-w-2xl mx-auto text-center">
-        <div class="hero-glow" style="left:-100px;top:-80px;"></div>
 
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-6">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-6 text-white">
           3 Primeiros Passos para<br/>
-          <span class="text-gradient">Construir um Negócio Internacional</span>
+          <span class="text-gradient-gold">Construir um Negócio Internacional</span>
         </h1>
 
-        <p class="text-slate-600 text-base md:text-lg leading-relaxed mb-4">
+        <p class="text-base md:text-lg leading-relaxed mb-4" style="color:rgba(255,255,255,0.85)">
           Você saiu do Brasil para construir uma vida melhor. Mas a vida que você tem hoje é a que você planejou?
         </p>
 
-        <p class="text-slate-600 text-base md:text-lg leading-relaxed mb-8">
+        <p class="text-base md:text-lg leading-relaxed mb-8" style="color:rgba(255,255,255,0.85)">
           Neste vídeo, vamos te mostrar como brasileiros no exterior estão saindo do subemprego e construindo renda própria com serviços internacionais, mesmo sem diploma reconhecido, mesmo começando do zero.
         </p>
 
-        <p class="text-slate-500 text-sm font-semibold uppercase tracking-wide mb-3">Assista:</p>
+        <p class="text-sm font-semibold uppercase tracking-wide mb-3" style="color:rgba(255,255,255,0.6)">Assista:</p>
 
         <!-- VSL Placeholder -->
         <div class="video-placeholder mb-8 w-full">
@@ -190,7 +175,7 @@
           <span class="ml-2">→</span>
         </a>
 
-        <p class="text-slate-400 text-xs mt-4">Acesso imediato · Compra 100% segura</p>
+        <p class="text-xs mt-4" style="color:rgba(255,255,255,0.45)">Acesso imediato · Compra 100% segura</p>
       </div>
     </div>
   </section>
@@ -198,7 +183,7 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  SEÇÃO DE DOR                                  -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="section-divider py-16 px-4 stripe-bg section-warm">
+  <section class="section-divider py-16 px-4 section-gray">
     <div class="max-w-2xl mx-auto">
 
       <h2 class="text-2xl md:text-4xl font-black text-center mb-10 leading-tight">
@@ -270,7 +255,7 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  SEÇÃO DE OPORTUNIDADE                         -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="section-divider py-20 px-4 section-warm">
+  <section class="section-divider py-20 px-4 section-white">
     <div class="max-w-2xl mx-auto text-center">
 
       <h2 class="text-3xl md:text-5xl font-black leading-tight mb-8">
@@ -307,7 +292,7 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  PROVA SOCIAL / DEPOIMENTOS                    -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="section-divider py-16 px-4 section-cool">
+  <section class="section-divider py-16 px-4 section-white">
     <div class="max-w-5xl mx-auto">
 
       <div class="text-center mb-12">
@@ -434,9 +419,9 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  AVISO / PARA QUEM É                           -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="section-divider py-16 px-4">
+  <section class="section-navy py-16 px-4">
     <div class="max-w-2xl mx-auto">
-      <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
+      <div class="space-y-6 text-lg leading-relaxed" style="color:rgba(255,255,255,0.85)">
         <p>
           Agora, preciso ser direta com você: essa profissão é para quem está disposto a construir algo com seriedade. Para quem entende que não existe atalho, que vai exigir dedicação, e que o resultado vem do trabalho bem feito, não de fórmula mágica.
         </p>
@@ -445,7 +430,7 @@
           Se você está buscando dinheiro rápido, sem esforço, essa página não é para você. Se quer algo pronto, onde não precisa se envolver, também não é aqui.
         </p>
 
-        <p>
+        <p class="text-white font-semibold">
           Agora, se você quer entender como funciona o modelo de negócio internacional de serviços, quer ter clareza do caminho e quer começar com os pés no chão, então sim, essa página foi feita para você.
         </p>
       </div>
@@ -455,7 +440,7 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  O QUE É O CURSO / OS 3 PASSOS                 -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="section-divider py-20 px-4 section-warm">
+  <section class="section-divider py-20 px-4 section-gray">
     <div class="max-w-3xl mx-auto">
 
       <div class="text-center mb-4">
@@ -515,7 +500,7 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  PRESENTE EXCLUSIVO                            -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="section-divider py-16 px-4 section-cool">
+  <section class="section-divider py-16 px-4 section-white">
     <div class="max-w-2xl mx-auto text-center">
 
       <h2 class="text-2xl md:text-3xl font-black mb-4">
@@ -608,7 +593,7 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  GARANTIA                                      -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="section-divider py-20 px-4 section-cool">
+  <section class="section-divider py-20 px-4 section-gray">
     <div class="max-w-2xl mx-auto">
 
       <div class="guarantee-box p-8 md:p-12 text-center">
@@ -721,7 +706,7 @@
   <!-- ═══════════════════════════════════════════════ -->
   <!--  FAQ                                           -->
   <!-- ═══════════════════════════════════════════════ -->
-  <section class="section-divider py-20 px-4 section-cool">
+  <section class="section-divider py-20 px-4 section-gray">
     <div class="max-w-2xl mx-auto">
 
       <div class="text-center mb-12">
