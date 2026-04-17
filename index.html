@@ -148,48 +148,11 @@
   <!-- ═══════════════════════════════════════════════ -->
   <section class="relative overflow-hidden" style="min-height:640px;">
 
-    <!-- FOTO — coluna direita, posicionada absolutamente em desktop -->
-    <div class="hidden md:block absolute inset-y-0 right-0 z-0"
-         style="width:52%;">
-      <img
-        src="images/founders-nobg.png"
-        alt="Kelen Souza e Dra. Giulya Naves — Help Cartório"
-        class="w-full h-full object-cover"
-        style="display:block; object-position: center top;"
-      />
-      <!-- fade topo -->
-      <div class="absolute top-0 left-0 right-0"
-           style="height:120px; background:linear-gradient(to bottom,#000 0%,transparent 100%);"></div>
-      <!-- fade inferior -->
-      <div class="absolute bottom-0 left-0 right-0"
-           style="height:120px; background:linear-gradient(to top,#000 0%,transparent 100%);"></div>
-      <!-- fade lado direito -->
-      <div class="absolute inset-y-0 right-0"
-           style="width:80px; background:linear-gradient(to left,#000 0%,transparent 100%);"></div>
-      <!-- fade lado esquerdo — LARGO, cobre ~50% da foto igual à página modelo -->
-      <div class="absolute inset-y-0 left-0"
-           style="width:55%; background:linear-gradient(to right,#000 0%,#000 20%,transparent 100%);"></div>
-    </div>
-
-    <!-- FOTO mobile — aparece acima do texto em telas pequenas -->
-    <div class="md:hidden relative w-full overflow-hidden" style="height:340px;">
-      <img
-        src="images/founders-nobg.png"
-        alt="Kelen Souza e Dra. Giulya Naves — Help Cartório"
-        class="w-full h-full object-cover object-top"
-      />
-      <div class="absolute bottom-0 left-0 right-0"
-           style="height:120px; background:linear-gradient(to top,#000 0%,transparent 100%);"></div>
-      <div class="absolute inset-y-0 left-0"
-           style="width:60px; background:linear-gradient(to right,#000 0%,transparent 100%);"></div>
-      <div class="absolute inset-y-0 right-0"
-           style="width:60px; background:linear-gradient(to left,#000 0%,transparent 100%);"></div>
-    </div>
 
     <!-- TEXTO — coluna esquerda -->
-    <div class="relative z-10 flex items-center justify-start min-h-full px-4 py-16"
+    <div class="relative z-10 flex items-center justify-center min-h-full px-4 py-16"
          style="min-height:640px;">
-      <div class="w-full md:w-1/2 md:pr-8 text-center md:text-left max-w-xl mr-auto">
+      <div class="w-full max-w-2xl mx-auto text-center">
         <div class="hero-glow" style="left:-100px;top:-80px;"></div>
 
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight mb-6">
@@ -636,6 +599,17 @@
 
         <!-- Kelen Souza -->
         <div class="text-center">
+          <div class="founder-photo mx-auto mb-5 flex items-center justify-center overflow-hidden"
+               style="width:160px;height:160px;">
+            <img
+              src="images/kelen.jpg"
+              alt="Kelen Souza — Help Cartório"
+              class="w-full h-full object-cover"
+              style="object-position: center top;"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div style="display:none" class="w-full h-full bg-zinc-900 items-center justify-center text-5xl font-black text-brand-green">K</div>
+          </div>
           <h3 class="text-xl font-black text-white mb-1">Kelen Souza</h3>
           <p class="text-brand-green text-sm font-semibold mb-3">Cofundadora · Help Cartório</p>
           <p class="text-gray-400 text-sm leading-relaxed">
@@ -645,6 +619,17 @@
 
         <!-- Giulya Naves -->
         <div class="text-center">
+          <div class="founder-photo mx-auto mb-5 flex items-center justify-center overflow-hidden"
+               style="width:160px;height:160px;">
+            <img
+              src="images/giulya.jpg"
+              alt="Dra. Giulya Naves — Help Cartório"
+              class="w-full h-full object-cover"
+              style="object-position: center top;"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div style="display:none" class="w-full h-full bg-zinc-900 items-center justify-center text-5xl font-black text-brand-green">G</div>
+          </div>
           <h3 class="text-xl font-black text-white mb-1">Dra. Giulya Naves</h3>
           <p class="text-brand-green text-sm font-semibold mb-3">Cofundadora · Especialista Jurídica</p>
           <p class="text-gray-400 text-sm leading-relaxed">
