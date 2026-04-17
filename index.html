@@ -150,40 +150,40 @@
 
     <!-- FOTO — coluna direita, posicionada absolutamente em desktop -->
     <div class="hidden md:block absolute inset-y-0 right-0 z-0"
-         style="width:48%;">
+         style="width:52%;">
       <img
         src="images/founders-nobg.png"
         alt="Kelen Souza e Dra. Giulya Naves — Help Cartório"
-        class="w-full h-full object-cover object-center"
-        style="display:block;"
+        class="w-full h-full object-cover"
+        style="display:block; object-position: center top;"
       />
       <!-- fade topo -->
-      <div class="absolute top-0 left-0 right-0 h-20"
-           style="background:linear-gradient(to bottom,#000 0%,transparent 100%);"></div>
+      <div class="absolute top-0 left-0 right-0"
+           style="height:120px; background:linear-gradient(to bottom,#000 0%,transparent 100%);"></div>
       <!-- fade inferior -->
-      <div class="absolute bottom-0 left-0 right-0 h-32"
-           style="background:linear-gradient(to top,#000 0%,transparent 100%);"></div>
+      <div class="absolute bottom-0 left-0 right-0"
+           style="height:120px; background:linear-gradient(to top,#000 0%,transparent 100%);"></div>
       <!-- fade lado direito -->
-      <div class="absolute inset-y-0 right-0 w-16"
-           style="background:linear-gradient(to left,#000 0%,transparent 100%);"></div>
-      <!-- fade lado esquerdo — dissolve para o fundo preto -->
-      <div class="absolute inset-y-0 left-0 w-40"
-           style="background:linear-gradient(to right,#000 0%,transparent 100%);"></div>
+      <div class="absolute inset-y-0 right-0"
+           style="width:80px; background:linear-gradient(to left,#000 0%,transparent 100%);"></div>
+      <!-- fade lado esquerdo — LARGO, cobre ~50% da foto igual à página modelo -->
+      <div class="absolute inset-y-0 left-0"
+           style="width:55%; background:linear-gradient(to right,#000 0%,#000 20%,transparent 100%);"></div>
     </div>
 
     <!-- FOTO mobile — aparece acima do texto em telas pequenas -->
-    <div class="md:hidden relative w-full overflow-hidden" style="height:320px;">
+    <div class="md:hidden relative w-full overflow-hidden" style="height:340px;">
       <img
         src="images/founders-nobg.png"
         alt="Kelen Souza e Dra. Giulya Naves — Help Cartório"
         class="w-full h-full object-cover object-top"
       />
-      <div class="absolute bottom-0 left-0 right-0 h-32"
-           style="background:linear-gradient(to top,#000 0%,transparent 100%);"></div>
-      <div class="absolute inset-y-0 left-0 w-10"
-           style="background:linear-gradient(to right,#000 0%,transparent 100%);"></div>
-      <div class="absolute inset-y-0 right-0 w-10"
-           style="background:linear-gradient(to left,#000 0%,transparent 100%);"></div>
+      <div class="absolute bottom-0 left-0 right-0"
+           style="height:120px; background:linear-gradient(to top,#000 0%,transparent 100%);"></div>
+      <div class="absolute inset-y-0 left-0"
+           style="width:60px; background:linear-gradient(to right,#000 0%,transparent 100%);"></div>
+      <div class="absolute inset-y-0 right-0"
+           style="width:60px; background:linear-gradient(to left,#000 0%,transparent 100%);"></div>
     </div>
 
     <!-- TEXTO — coluna esquerda -->
