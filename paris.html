@@ -114,10 +114,17 @@ header{background:#fff;border-bottom:1px solid rgba(30,58,95,.08);padding:18px 2
 .tl-event{font-size:.9rem;font-weight:600;color:var(--navy);line-height:1.4}
 
 /* ── QUEM ── */
-.quem{background:#fff;padding:80px 20px}
-.quem-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:40px}
-.quem-img-placeholder{border-radius:12px;aspect-ratio:4/5;background:var(--light);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;border:1px dashed rgba(30,58,95,.15);flex-direction:column;gap:8px}
-.quem-text p{font-size:.95rem;color:var(--muted);line-height:1.85;margin-bottom:16px}
+.quem{background:var(--navy-dark);padding:80px 20px}
+.quem-card{display:grid;grid-template-columns:220px 1fr 160px;gap:0;border:1px solid rgba(201,150,58,.35);border-radius:14px;overflow:hidden;margin-top:48px;box-shadow:0 8px 48px rgba(0,0,0,.35)}
+.quem-building{width:100%;height:100%;object-fit:cover;display:block}
+.quem-inner{padding:40px 36px;background:var(--navy)}
+.quem-inner .section-label{color:var(--gold-light)}
+.quem-inner .section-title{color:#fff}
+.quem-inner p{font-size:.9rem;color:rgba(255,255,255,.65);line-height:1.85;margin-bottom:14px}
+.quem-portraits{display:grid;grid-template-rows:1fr 1fr;gap:0;border-left:1px solid rgba(201,150,58,.2)}
+.quem-portrait{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.quem-portrait:first-child{border-bottom:1px solid rgba(201,150,58,.2)}
+@media(max-width:768px){.quem-card{grid-template-columns:1fr;grid-template-rows:200px auto auto}.quem-building{height:200px}.quem-portraits{grid-template-rows:none;grid-template-columns:1fr 1fr;height:180px;border-left:none;border-top:1px solid rgba(201,150,58,.2)}.quem-portrait:first-child{border-bottom:none;border-right:1px solid rgba(201,150,58,.2)}}
 
 /* ── FAQ ── */
 .faq{background:var(--gray);padding:80px 20px}
@@ -336,19 +343,25 @@ footer img{height:40px;margin-bottom:20px;filter:brightness(10)}
 
 <!-- QUEM -->
 <section class="quem">
-  <div class="container">
-    <div class="quem-grid">
-      <img src="images/founders-nobg.png" alt="Equipe Help Cartório" style="width:100%;border-radius:12px;object-fit:contain"/>
-      <div class="quem-text">
-        <div class="divider-left"></div>
-        <p class="section-label">Quem conduz essa história</p>
-        <h2 class="section-title">A Help Cartório.</h2>
+  <div class="container-wide">
+    <div style="text-align:center">
+      <div class="divider"></div>
+      <p class="section-label" style="color:var(--gold-light)">Quem conduz essa história</p>
+      <h2 class="section-title" style="color:#fff">A Help Cartório.</h2>
+    </div>
+    <div class="quem-card">
+      <img class="quem-building" src="images/escritorio.jpg" alt="Escritório Help Cartório em Londres"/>
+      <div class="quem-inner">
         <p>A Help Cartório é uma empresa internacional que atende brasileiros expatriados desde 2022.</p>
         <p>O trabalho é conduzido com seriedade, atenção a cada caso e respeito às exigências legais, sem improvisos e sem atalhos.</p>
         <p>Aqui, o casamento internacional é realizado no Brasil, de forma totalmente online, mesmo quando os noivos moram em países diferentes ou possuem nacionalidades distintas. A condução jurídica é feita por especialistas em demandas internacionais.</p>
         <div style="margin-top:28px">
           <a href="https://api.whatsapp.com/send?phone=447507853963&text=" class="btn-outline">FALAR COM A EQUIPE</a>
         </div>
+      </div>
+      <div class="quem-portraits">
+        <img class="quem-portrait" src="images/giulya.jpg" alt="Giulya — Help Cartório"/>
+        <img class="quem-portrait" src="images/kelen1.jpg" alt="Kelen — Help Cartório"/>
       </div>
     </div>
   </div>
