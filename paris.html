@@ -52,7 +52,7 @@ header{background:#fff;border-bottom:1px solid rgba(30,58,95,.08);padding:18px 2
 .logo{height:44px}
 
 /* ── HERO ── */
-.hero{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 60%,#1a3560 100%);padding:96px 20px 80px;text-align:center;position:relative;overflow:hidden}
+.hero{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 60%,#1a3560 100%);padding:96px 20px 0;text-align:center;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:url('https://helpcartorio.com/wordpress/wp-content/uploads/2025/10/Simbolo-Help-Cartorio-modificado.png') center/400px no-repeat;opacity:.04;pointer-events:none}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,150,58,.15);border:1px solid rgba(201,150,58,.35);color:var(--gold-light);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:8px 20px;border-radius:100px;margin-bottom:32px}
 .hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold-light);animation:pulse 2s infinite}
@@ -65,8 +65,7 @@ header{background:#fff;border-bottom:1px solid rgba(30,58,95,.08);padding:18px 2
 .hero-deadline strong{color:rgba(255,255,255,.7)}
 
 /* ── CELEBRAÇÃO ── */
-.celebracao{background:#fff;padding:80px 20px;position:relative;overflow:hidden}
-.celebracao::after{content:'';position:absolute;top:50%;right:-80px;transform:translateY(-50%);width:480px;height:480px;background:url('https://helpcartorio.com/wordpress/wp-content/uploads/2025/10/Simbolo-Help-Cartorio-modificado.png') center/contain no-repeat;opacity:.04;pointer-events:none}
+.celebracao{background:#fff;padding:80px 20px}
 .cele-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px}
 .cele-card{background:var(--light);border-radius:12px;padding:36px 32px;border-left:3px solid var(--gold)}
 .cele-num{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
@@ -74,8 +73,7 @@ header{background:#fff;border-bottom:1px solid rgba(30,58,95,.08);padding:18px 2
 .cele-text{font-size:.93rem;color:var(--muted);line-height:1.8}
 
 /* ── PRÊMIO ── */
-.premio{background:var(--gray);padding:80px 20px;position:relative;overflow:hidden}
-.premio::after{content:'';position:absolute;top:50%;right:-80px;transform:translateY(-50%);width:480px;height:480px;background:url('https://helpcartorio.com/wordpress/wp-content/uploads/2025/10/Simbolo-Help-Cartorio-modificado.png') center/contain no-repeat;opacity:.04;pointer-events:none}
+.premio{background:var(--gray);padding:80px 20px}
 .premio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
 .premio-card{background:#fff;border-radius:12px;padding:32px 24px;text-align:center;border-top:3px solid var(--gold);box-shadow:0 2px 16px rgba(30,58,95,.06)}
 .premio-icon{font-size:2rem;margin-bottom:16px}
@@ -85,8 +83,7 @@ header{background:#fff;border-bottom:1px solid rgba(30,58,95,.08);padding:18px 2
 .premio-obs{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:680px;margin-left:auto;margin-right:auto;text-align:center;line-height:1.8;padding:20px;background:rgba(30,58,95,.04);border-radius:8px;border:1px solid rgba(30,58,95,.08)}
 
 /* ── PASSOS ── */
-.passos{background:#fff;padding:80px 20px;position:relative;overflow:hidden}
-.passos::after{content:'';position:absolute;top:50%;right:-80px;transform:translateY(-50%);width:480px;height:480px;background:url('https://helpcartorio.com/wordpress/wp-content/uploads/2025/10/Simbolo-Help-Cartorio-modificado.png') center/contain no-repeat;opacity:.04;pointer-events:none}
+.passos{background:#fff;padding:80px 20px}
 .passos-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
 .passo-card{border-radius:12px;padding:28px;border:1px solid rgba(30,58,95,.1);display:flex;gap:20px;align-items:flex-start;transition:box-shadow .2s}
 .passo-card:hover{box-shadow:0 4px 24px rgba(30,58,95,.1)}
@@ -97,14 +94,12 @@ header{background:#fff;border-bottom:1px solid rgba(30,58,95,.08);padding:18px 2
 .passo-note{margin-top:32px;text-align:center;font-size:.85rem;color:var(--muted);font-style:italic}
 
 /* ── CTA MEIO ── */
-.cta-mid{background:linear-gradient(135deg,var(--navy-dark),var(--navy));padding:80px 20px;text-align:center;position:relative;overflow:hidden}
-.cta-mid::before{content:'';position:absolute;top:50%;right:-80px;transform:translateY(-50%);width:480px;height:480px;background:url('https://helpcartorio.com/wordpress/wp-content/uploads/2025/10/Simbolo-Help-Cartorio-modificado.png') center/contain no-repeat;opacity:.05;pointer-events:none}
-.cta-mid h2{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;color:#fff;margin-bottom:16px;max-width:600px;margin-left:auto;margin-right:auto;position:relative}
-.cta-mid p{font-size:.95rem;color:rgba(255,255,255,.7);margin-bottom:36px;max-width:500px;margin-left:auto;margin-right:auto;position:relative}
+.cta-mid{background:linear-gradient(135deg,var(--navy-dark),var(--navy));padding:80px 20px;text-align:center}
+.cta-mid h2{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;color:#fff;margin-bottom:16px;max-width:600px;margin-left:auto;margin-right:auto}
+.cta-mid p{font-size:.95rem;color:rgba(255,255,255,.7);margin-bottom:36px;max-width:500px;margin-left:auto;margin-right:auto}
 
 /* ── TIMELINE ── */
-.timeline{background:var(--cream);padding:80px 20px;overflow:hidden;position:relative}
-.timeline::before{content:'';position:absolute;top:50%;right:-80px;transform:translateY(-50%);width:500px;height:500px;background:url('https://helpcartorio.com/wordpress/wp-content/uploads/2025/10/Simbolo-Help-Cartorio-modificado.png') center/contain no-repeat;opacity:.06;pointer-events:none}
+.timeline{background:var(--cream);padding:80px 20px;overflow:hidden}
 .timeline-track{display:flex;gap:0;margin-top:48px;position:relative}
 .timeline-track::before{content:'';position:absolute;top:28px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light),var(--gold));z-index:0}
 .tl-item{flex:1;position:relative;padding-top:56px;text-align:center;padding-left:12px;padding-right:12px}
@@ -181,11 +176,10 @@ footer img{height:40px;margin-bottom:20px;filter:brightness(10)}
     <h1>Case no Brasil sem sair de casa<br>e <em>brinde em Paris.</em></h1>
     <p class="hero-sub">Casamento internacional realizado 100% online, com toda a segurança jurídica que o seu "sim" merece. E uma lua de mel em Paris esperando por você e seu par.</p>
 
-    <img src="images/casal-paris.png" alt="Casal em Paris com a Torre Eiffel ao fundo" style="width:100%;max-width:720px;display:block;margin:0 auto 48px;border-radius:12px;object-fit:cover;aspect-ratio:16/9;box-shadow:0 16px 64px rgba(0,0,0,.4)"/>
-
     <a href="https://api.whatsapp.com/send?phone=447507853963&text=" class="btn btn-full">QUERO PARTICIPAR</a>
     <p class="hero-deadline"><strong>Adesões abertas até 30 de novembro de 2026.</strong> Sorteio em 10 de dezembro.</p>
   </div>
+  <img src="images/casal-paris.png" alt="Casal em Paris com a Torre Eiffel ao fundo" style="width:100%;display:block;margin-top:56px;object-fit:cover;aspect-ratio:16/7;vertical-align:bottom"/>
 </section>
 
 <!-- MARQUEE 2 -->
