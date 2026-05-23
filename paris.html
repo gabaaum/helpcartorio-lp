@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Case no Brasil sem sair de casa e brinde em Paris — Help Cartório</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1E3A5F;
+  --navy-dark:#0F2540;
+  --gold:#C9963A;
+  --gold-light:#E6B84A;
+  --gold-dark:#A87830;
+  --cream:#FDF9F3;
+  --light:#EEF5FA;
+  --gray:#F4F6F9;
+  --text:#1E3A5F;
+  --muted:#5A7A9A;
+  --white:#FFFFFF;
+}
+body{font-family:'Inter',sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+
+/* ── MARQUEE ── */
+.marquee-wrap{background:linear-gradient(90deg,var(--gold-dark),var(--gold),var(--gold-light),var(--gold),var(--gold-dark));padding:14px 0;overflow:hidden;position:relative}
+.marquee{display:flex;white-space:nowrap;animation:marquee 28s linear infinite}
+.marquee-item{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--navy-dark);padding-right:48px;display:flex;align-items:center;gap:16px}
+.marquee-dot{width:5px;height:5px;border-radius:50%;background:var(--navy-dark);display:inline-block;opacity:.5}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── BOTÕES ── */
+.btn{display:inline-block;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-dark) 100%);color:#fff;font-family:'Inter',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase;padding:18px 40px;border-radius:6px;cursor:pointer;border:none;text-align:center;transition:transform .2s,box-shadow .2s;text-decoration:none;box-shadow:0 4px 24px rgba(201,150,58,.4)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 36px rgba(201,150,58,.55)}
+.btn-full{display:block;width:100%;max-width:480px;margin:0 auto}
+.btn-outline{display:inline-block;background:transparent;color:var(--gold);font-family:'Inter',sans-serif;font-weight:600;font-size:.9rem;letter-spacing:.05em;padding:14px 36px;border-radius:6px;border:1.5px solid var(--gold);text-align:center;transition:all .2s;text-decoration:none}
+.btn-outline:hover{background:rgba(201,150,58,.08)}
+
+/* ── LAYOUT ── */
+section{padding:80px 20px}
+.container{max-width:900px;margin:0 auto}
+.container-wide{max-width:1100px;margin:0 auto}
+.divider{width:56px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light));border-radius:2px;margin:0 auto 24px}
+.divider-left{width:56px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light));border-radius:2px;margin:0 0 24px}
+.section-label{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:700;line-height:1.2;margin-bottom:20px}
+.section-sub{font-size:.97rem;color:var(--muted);line-height:1.85;max-width:640px}
+
+/* ── HEADER ── */
+header{background:#fff;border-bottom:1px solid rgba(30,58,95,.08);padding:18px 24px;display:flex;align-items:center;justify-content:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(30,58,95,.06)}
+.logo{height:44px}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 60%,#1a3560 100%);padding:96px 20px 80px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url('https://helpcartorio.com/wordpress/wp-content/uploads/2025/10/Simbolo-Help-Cartorio-modificado.png') center/400px no-repeat;opacity:.04;pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,150,58,.15);border:1px solid rgba(201,150,58,.35);color:var(--gold-light);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:8px 20px;border-radius:100px;margin-bottom:32px}
+.hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold-light);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.4rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:24px;max-width:760px;margin-left:auto;margin-right:auto}
+.hero h1 em{font-style:italic;color:var(--gold-light)}
+.hero-sub{font-size:1rem;color:rgba(255,255,255,.75);max-width:580px;margin:0 auto 40px;line-height:1.85}
+.hero-img-placeholder{width:100%;max-width:720px;margin:0 auto 48px;border-radius:12px;aspect-ratio:16/7;background:rgba(255,255,255,.06);border:1px dashed rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:.85rem;letter-spacing:.1em}
+.hero-deadline{margin-top:24px;font-size:.82rem;color:rgba(255,255,255,.45);letter-spacing:.06em}
+.hero-deadline strong{color:rgba(255,255,255,.7)}
+
+/* ── CELEBRAÇÃO ── */
+.celebracao{background:#fff;padding:80px 20px}
+.cele-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px}
+.cele-card{background:var(--light);border-radius:12px;padding:36px 32px;border-left:3px solid var(--gold)}
+.cele-num{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.cele-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:12px}
+.cele-text{font-size:.93rem;color:var(--muted);line-height:1.8}
+
+/* ── PRÊMIO ── */
+.premio{background:var(--gray);padding:80px 20px}
+.premio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.premio-card{background:#fff;border-radius:12px;padding:32px 24px;text-align:center;border-top:3px solid var(--gold);box-shadow:0 2px 16px rgba(30,58,95,.06)}
+.premio-icon{font-size:2rem;margin-bottom:16px}
+.premio-title{font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);margin-bottom:10px}
+.premio-value{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--gold);margin-bottom:8px}
+.premio-desc{font-size:.85rem;color:var(--muted);line-height:1.75}
+.premio-obs{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:680px;margin-left:auto;margin-right:auto;text-align:center;line-height:1.8;padding:20px;background:rgba(30,58,95,.04);border-radius:8px;border:1px solid rgba(30,58,95,.08)}
+
+/* ── PASSOS ── */
+.passos{background:#fff;padding:80px 20px}
+.passos-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+.passo-card{border-radius:12px;padding:28px;border:1px solid rgba(30,58,95,.1);display:flex;gap:20px;align-items:flex-start;transition:box-shadow .2s}
+.passo-card:hover{box-shadow:0 4px 24px rgba(30,58,95,.1)}
+.passo-num{min-width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-dark));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1rem}
+.passo-body{}
+.passo-label{font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.passo-text{font-size:.93rem;color:var(--muted);line-height:1.75}
+.passo-note{margin-top:32px;text-align:center;font-size:.85rem;color:var(--muted);font-style:italic}
+
+/* ── CTA MEIO ── */
+.cta-mid{background:linear-gradient(135deg,var(--navy-dark),var(--navy));padding:80px 20px;text-align:center}
+.cta-mid h2{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;color:#fff;margin-bottom:16px;max-width:600px;margin-left:auto;margin-right:auto}
+.cta-mid p{font-size:.95rem;color:rgba(255,255,255,.7);margin-bottom:36px;max-width:500px;margin-left:auto;margin-right:auto}
+
+/* ── TIMELINE ── */
+.timeline{background:var(--cream);padding:80px 20px;overflow:hidden}
+.timeline-track{display:flex;gap:0;margin-top:48px;position:relative}
+.timeline-track::before{content:'';position:absolute;top:28px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light),var(--gold));z-index:0}
+.tl-item{flex:1;position:relative;padding-top:56px;text-align:center;padding-left:12px;padding-right:12px}
+.tl-dot{width:20px;height:20px;border-radius:50%;background:var(--gold);border:3px solid var(--cream);position:absolute;top:18px;left:50%;transform:translateX(-50%);z-index:1;box-shadow:0 0 0 3px rgba(201,150,58,.3)}
+.tl-date{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.tl-event{font-size:.9rem;font-weight:600;color:var(--navy);line-height:1.4}
+
+/* ── QUEM ── */
+.quem{background:#fff;padding:80px 20px}
+.quem-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:40px}
+.quem-img-placeholder{border-radius:12px;aspect-ratio:4/5;background:var(--light);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;border:1px dashed rgba(30,58,95,.15);flex-direction:column;gap:8px}
+.quem-text p{font-size:.95rem;color:var(--muted);line-height:1.85;margin-bottom:16px}
+
+/* ── FAQ ── */
+.faq{background:var(--gray);padding:80px 20px}
+.faq-list{margin-top:40px;display:flex;flex-direction:column;gap:12px;max-width:760px;margin-left:auto;margin-right:auto}
+.faq-item{background:#fff;border-radius:10px;border:1px solid rgba(30,58,95,.08);overflow:hidden}
+.faq-q{width:100%;background:none;border:none;padding:20px 24px;text-align:left;font-family:'Inter',sans-serif;font-size:.95rem;font-weight:600;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-q:hover{background:rgba(30,58,95,.03)}
+.faq-icon{min-width:24px;height:24px;border-radius:50%;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--gold);transition:transform .25s;font-weight:700}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;font-size:.9rem;color:var(--muted);line-height:1.8}
+.faq-a-inner{padding:0 24px 20px}
+.faq-item.open .faq-a{max-height:300px}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-reg{margin-top:24px;text-align:center}
+.faq-reg a{color:var(--gold);font-size:.88rem;font-weight:600;text-decoration:underline}
+
+/* ── CTA FINAL ── */
+.cta-final{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 100%);padding:96px 20px;text-align:center;position:relative;overflow:hidden}
+.cta-final::before{content:'';position:absolute;inset:0;background:url('https://helpcartorio.com/wordpress/wp-content/uploads/2025/10/Simbolo-Help-Cartorio-modificado.png') center/500px no-repeat;opacity:.04;pointer-events:none}
+.cta-final h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:700;color:#fff;margin-bottom:16px;max-width:600px;margin-left:auto;margin-right:auto;position:relative}
+.cta-final p{font-size:.97rem;color:rgba(255,255,255,.7);max-width:520px;margin:0 auto 40px;line-height:1.85;position:relative}
+
+/* ── FOOTER ── */
+footer{background:var(--navy-dark);padding:40px 20px;text-align:center}
+footer img{height:40px;margin-bottom:20px;filter:brightness(10)}
+.footer-text{font-size:.75rem;color:rgba(255,255,255,.35);line-height:1.9;max-width:680px;margin:0 auto}
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+  .cele-grid,.passos-grid,.quem-grid,.premio-grid{grid-template-columns:1fr}
+  .timeline-track{flex-direction:column;gap:24px}
+  .timeline-track::before{display:none}
+  .tl-item{padding-top:0;padding-left:48px;text-align:left}
+  .tl-dot{top:4px;left:16px}
+  section{padding:60px 20px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <img class="logo" src="https://helpcartorio.com/wordpress/wp-content/uploads/2025/10/Logo-Help-Cartorio-PNG-Vertical-4-scaled-e1760539652324.png" alt="Help Cartório">
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee">
+    <span class="marquee-item">HELP CARTÓRIO <span class="marquee-dot"></span> CASAMENTO INTERNACIONAL <span class="marquee-dot"></span> BRINDE EM PARIS <span class="marquee-dot"></span></span>
+    <span class="marquee-item">HELP CARTÓRIO <span class="marquee-dot"></span> CASAMENTO INTERNACIONAL <span class="marquee-dot"></span> BRINDE EM PARIS <span class="marquee-dot"></span></span>
+    <span class="marquee-item">HELP CARTÓRIO <span class="marquee-dot"></span> CASAMENTO INTERNACIONAL <span class="marquee-dot"></span> BRINDE EM PARIS <span class="marquee-dot"></span></span>
+    <span class="marquee-item">HELP CARTÓRIO <span class="marquee-dot"></span> CASAMENTO INTERNACIONAL <span class="marquee-dot"></span> BRINDE EM PARIS <span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Adesões abertas · Sorteio em 10 de dezembro
+    </div>
+    <h1>Case no Brasil sem sair de casa<br>e <em>brinde em Paris.</em></h1>
+    <p class="hero-sub">Casamento internacional realizado 100% online, com toda a segurança jurídica que o seu "sim" merece. E uma lua de mel em Paris esperando por você e seu par.</p>
+
+    <!-- PLACEHOLDER FOTO -->
+    <div class="hero-img-placeholder">[ FOTO DO CASAL / PARIS — inserir depois ]</div>
+
+    <a href="https://api.whatsapp.com/send?phone=447507853963&text=" class="btn btn-full">QUERO PARTICIPAR</a>
+    <p class="hero-deadline"><strong>Adesões abertas até 30 de novembro de 2026.</strong> Sorteio em 10 de dezembro.</p>
+  </div>
+</section>
+
+<!-- MARQUEE 2 -->
+<div class="marquee-wrap">
+  <div class="marquee" style="animation-direction:reverse">
+    <span class="marquee-item">CASAMENTO 100% ONLINE <span class="marquee-dot"></span> SEGURANÇA JURÍDICA <span class="marquee-dot"></span> BRASILEIROS EXPATRIADOS <span class="marquee-dot"></span></span>
+    <span class="marquee-item">CASAMENTO 100% ONLINE <span class="marquee-dot"></span> SEGURANÇA JURÍDICA <span class="marquee-dot"></span> BRASILEIROS EXPATRIADOS <span class="marquee-dot"></span></span>
+    <span class="marquee-item">CASAMENTO 100% ONLINE <span class="marquee-dot"></span> SEGURANÇA JURÍDICA <span class="marquee-dot"></span> BRASILEIROS EXPATRIADOS <span class="marquee-dot"></span></span>
+    <span class="marquee-item">CASAMENTO 100% ONLINE <span class="marquee-dot"></span> SEGURANÇA JURÍDICA <span class="marquee-dot"></span> BRASILEIROS EXPATRIADOS <span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<!-- CELEBRAÇÃO -->
+<section class="celebracao">
+  <div class="container">
+    <div class="divider"></div>
+    <p class="section-label" style="text-align:center">A proposta</p>
+    <h2 class="section-title" style="text-align:center">Uma celebração em duas partes.</h2>
+    <div class="cele-grid">
+      <div class="cele-card">
+        <div class="cele-num">Parte 01</div>
+        <div class="cele-title">O seu casamento</div>
+        <p class="cele-text">Conduzido com método, ética e atenção aos detalhes que fazem diferença. O casamento internacional realizado no Brasil, de forma totalmente online, com acompanhamento jurídico especializado em cada etapa.</p>
+      </div>
+      <div class="cele-card">
+        <div class="cele-num">Parte 02</div>
+        <div class="cele-title">A Paris</div>
+        <p class="cele-text">Um dos casais que fechar o casamento com a Help entre 25 de maio e 30 de novembro pode começar essa nova fase da vida em Paris, com hospedagem e passagem cobertas por um voucher exclusivo.</p>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:32px;font-family:'Playfair Display',serif;font-size:1.3rem;font-style:italic;color:var(--navy)">O melhor presente de casamento que vocês podem receber.</p>
+  </div>
+</section>
+
+<!-- PRÊMIO -->
+<section class="premio">
+  <div class="container">
+    <div class="divider"></div>
+    <p class="section-label" style="text-align:center">O prêmio</p>
+    <h2 class="section-title" style="text-align:center">O que está em jogo.</h2>
+    <div class="premio-grid">
+      <div class="premio-card">
+        <div class="premio-icon">🏨</div>
+        <div class="premio-title">Hospedagem em Paris</div>
+        <div class="premio-value">€200/diária</div>
+        <p class="premio-desc">Voucher para hotel categoria 4 ou 5 estrelas. Válido para duas diárias.</p>
+      </div>
+      <div class="premio-card">
+        <div class="premio-icon">✈️</div>
+        <div class="premio-title">Passagem aérea</div>
+        <div class="premio-value">Até €200</div>
+        <p class="premio-desc">Voucher aplicável ao trajeto escolhido pelo casal.</p>
+      </div>
+      <div class="premio-card">
+        <div class="premio-icon">📅</div>
+        <div class="premio-title">Validade</div>
+        <div class="premio-value">Até mar/2027</div>
+        <p class="premio-desc">O voucher pode ser utilizado até março de 2027, no momento que o casal preferir.</p>
+      </div>
+    </div>
+    <p class="premio-obs">Valor total do prêmio limitado a €600. O prêmio corresponde a auxílio financeiro por meio de voucher, sem conversão em dinheiro. Despesas adicionais como alimentação, transporte local, documentação e taxas extras ficam por conta do casal vencedor.</p>
+  </div>
+</section>
+
+<!-- PASSOS -->
+<section class="passos">
+  <div class="container">
+    <div class="divider"></div>
+    <p class="section-label" style="text-align:center">Como concorrer</p>
+    <h2 class="section-title" style="text-align:center">São apenas 4 passos.</h2>
+    <div class="passos-grid">
+      <div class="passo-card">
+        <div class="passo-num">1</div>
+        <div class="passo-body">
+          <div class="passo-label">Passo 1</div>
+          <p class="passo-text">Feche contrato de casamento com a Help Cartório entre 25 de maio e 30 de novembro de 2026.</p>
+        </div>
+      </div>
+      <div class="passo-card">
+        <div class="passo-num">2</div>
+        <div class="passo-body">
+          <div class="passo-label">Passo 2</div>
+          <p class="passo-text">Mantenha a contratação ativa e regular, com pagamento confirmado conforme as condições comerciais.</p>
+        </div>
+      </div>
+      <div class="passo-card">
+        <div class="passo-num">3</div>
+        <div class="passo-body">
+          <div class="passo-label">Passo 3</div>
+          <p class="passo-text">Curta o post oficial da campanha no Instagram da Help Cartório.</p>
+        </div>
+      </div>
+      <div class="passo-card">
+        <div class="passo-num">4</div>
+        <div class="passo-body">
+          <div class="passo-label">Passo 4</div>
+          <p class="passo-text">Marque dois amigos reais nos comentários do post oficial.</p>
+        </div>
+      </div>
+    </div>
+    <p class="passo-note">Cada contrato válido dá direito a uma participação no sorteio.</p>
+    <div style="text-align:center;margin-top:40px">
+      <a href="https://api.whatsapp.com/send?phone=447507853963&text=" class="btn">QUERO CASAR COM A HELP CARTÓRIO</a>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline">
+  <div class="container-wide">
+    <div class="divider"></div>
+    <p class="section-label" style="text-align:center">Calendário</p>
+    <h2 class="section-title" style="text-align:center">As datas que importam.</h2>
+    <div class="timeline-track">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">25 mai 2026</div>
+        <div class="tl-event">Adesões abertas</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">30 nov 2026</div>
+        <div class="tl-event">Encerramento do período de participação</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">10 dez 2026</div>
+        <div class="tl-event">Sorteio ao vivo no Instagram da Help Cartório</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Até mar 2027</div>
+        <div class="tl-event">Prazo para o casal vencedor utilizar o prêmio</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA MEIO -->
+<section class="cta-mid">
+  <div class="container">
+    <h2>Está na hora de organizar o "sim".</h2>
+    <p>Cada caso de casamento tem suas particularidades, e a primeira conversa serve justamente para entender o seu. Sem pressa, sem promessas, com clareza sobre o caminho.</p>
+    <a href="https://api.whatsapp.com/send?phone=447507853963&text=" class="btn">AGENDAR CONVERSA COM A HELP CARTÓRIO</a>
+  </div>
+</section>
+
+<!-- QUEM -->
+<section class="quem">
+  <div class="container">
+    <div class="quem-grid">
+      <div class="quem-img-placeholder">
+        <span>📷</span>
+        <span>[ FOTO — inserir depois ]</span>
+      </div>
+      <div class="quem-text">
+        <div class="divider-left"></div>
+        <p class="section-label">Quem conduz essa história</p>
+        <h2 class="section-title">A Help Cartório.</h2>
+        <p>A Help Cartório é uma empresa internacional que atende brasileiros expatriados desde 2022.</p>
+        <p>O trabalho é conduzido com seriedade, atenção a cada caso e respeito às exigências legais, sem improvisos e sem atalhos.</p>
+        <p>Aqui, o casamento internacional é realizado no Brasil, de forma totalmente online, mesmo quando os noivos moram em países diferentes ou possuem nacionalidades distintas. A condução jurídica é feita por especialistas em demandas internacionais.</p>
+        <div style="margin-top:28px">
+          <a href="https://api.whatsapp.com/send?phone=447507853963&text=" class="btn-outline">FALAR COM A EQUIPE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="divider"></div>
+    <p class="section-label" style="text-align:center">Perguntas frequentes</p>
+    <h2 class="section-title" style="text-align:center">Dúvidas que surgem.</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="faqToggle(this)">
+          Posso participar mesmo morando em outro país?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Sim. A campanha foi pensada justamente para os casais brasileiros que vivem fora e querem casar no Brasil de forma totalmente online.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="faqToggle(this)">
+          Preciso ir ao Brasil em algum momento do processo?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Não. Todo o procedimento é conduzido à distância, com acompanhamento da equipe da Help em cada etapa.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="faqToggle(this)">
+          E se eu fechar contrato antes do dia 25 de maio?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Apenas os contratos formalizados dentro do período da campanha entram no sorteio. Para contratos anteriores, vale a pena conversar com a equipe para entender as condições.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="faqToggle(this)">
+          O voucher pode ser convertido em dinheiro?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Não. O prêmio é exclusivamente em voucher para hospedagem e passagem, conforme as condições do regulamento.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="faqToggle(this)">
+          O que acontece se eu cancelar o contrato antes do sorteio?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Contratos cancelados, rescindidos ou inadimplentes até a data do sorteio perdem automaticamente o direito de participação.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="faqToggle(this)">
+          Tem alguma exigência depois do sorteio?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Sim. Como condição para utilização do prêmio, o casal vencedor concorda em produzir dez vídeos espontâneos durante a viagem, com cerca de um minuto cada, mostrando a experiência. O conteúdo será utilizado para divulgação institucional da Help. Os detalhes estão no regulamento completo.</div></div>
+      </div>
+
+    </div>
+    <div class="faq-reg"><a href="#">Acessar regulamento completo</a></div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="container">
+    <h2>Está na hora de organizar o "sim".</h2>
+    <p>Cada caso de casamento tem suas particularidades, e a primeira conversa serve justamente para entender o seu. Sem pressa, sem promessas, com clareza sobre o caminho.</p>
+    <a href="https://api.whatsapp.com/send?phone=447507853963&text=" class="btn btn-full">AGENDAR CONVERSA COM A HELP CARTÓRIO</a>
+  </div>
+</section>
+
+<!-- MARQUEE FINAL -->
+<div class="marquee-wrap">
+  <div class="marquee">
+    <span class="marquee-item">HELP CARTÓRIO <span class="marquee-dot"></span> CASAMENTO INTERNACIONAL <span class="marquee-dot"></span> BRINDE EM PARIS <span class="marquee-dot"></span></span>
+    <span class="marquee-item">HELP CARTÓRIO <span class="marquee-dot"></span> CASAMENTO INTERNACIONAL <span class="marquee-dot"></span> BRINDE EM PARIS <span class="marquee-dot"></span></span>
+    <span class="marquee-item">HELP CARTÓRIO <span class="marquee-dot"></span> CASAMENTO INTERNACIONAL <span class="marquee-dot"></span> BRINDE EM PARIS <span class="marquee-dot"></span></span>
+    <span class="marquee-item">HELP CARTÓRIO <span class="marquee-dot"></span> CASAMENTO INTERNACIONAL <span class="marquee-dot"></span> BRINDE EM PARIS <span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <img src="https://helpcartorio.com/wordpress/wp-content/uploads/2025/10/Logo-Help-Cartorio-PNG-Vertical-4-scaled-e1760539652324.png" alt="Help Cartório">
+  <p class="footer-text">Help Cartório · Empresa internacional desde 2022 · Atendimento a brasileiros expatriados<br><br>
+  Promoção válida entre 25/05/2026 e 30/11/2026. Sorteio em 10/12/2026. Para participar, é necessário cumprir cumulativamente todos os requisitos previstos no regulamento. Em caso de dúvidas, consulte o regulamento completo.</p>
+</footer>
+
+<script>
+function faqToggle(btn){
+  var item = btn.parentElement;
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(el){ el.classList.remove('open') });
+  if(!isOpen) item.classList.add('open');
+}
+</script>
+
+</body>
+</html>
