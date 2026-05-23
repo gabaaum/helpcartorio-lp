@@ -52,8 +52,10 @@ header{background:#fff;border-bottom:1px solid rgba(30,58,95,.08);padding:18px 2
 .logo{height:44px}
 
 /* ── HERO ── */
-.hero{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 60%,#1a3560 100%);padding:96px 20px 0;text-align:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:url('https://helpcartorio.com/wordpress/wp-content/uploads/2025/10/Simbolo-Help-Cartorio-modificado.png') center/400px no-repeat;opacity:.04;pointer-events:none}
+.hero{background:url('images/casal-paris.png') center/cover no-repeat;padding:96px 20px 96px;text-align:center;position:relative;overflow:hidden;min-height:600px;display:flex;align-items:center}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(15,37,64,.82) 0%,rgba(30,58,95,.75) 60%,rgba(15,37,64,.80) 100%);pointer-events:none}
+.hero::after{content:'';position:absolute;inset:0;background:url('https://helpcartorio.com/wordpress/wp-content/uploads/2025/10/Simbolo-Help-Cartorio-modificado.png') center/400px no-repeat;opacity:.04;pointer-events:none}
+.hero .container{position:relative;z-index:1;width:100%}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,150,58,.15);border:1px solid rgba(201,150,58,.35);color:var(--gold-light);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:8px 20px;border-radius:100px;margin-bottom:32px}
 .hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold-light);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
@@ -179,7 +181,6 @@ footer img{height:40px;margin-bottom:20px;filter:brightness(10)}
     <a href="https://api.whatsapp.com/send?phone=447507853963&text=" class="btn btn-full">QUERO PARTICIPAR</a>
     <p class="hero-deadline"><strong>Adesões abertas até 30 de novembro de 2026.</strong> Sorteio em 10 de dezembro.</p>
   </div>
-  <img src="images/casal-paris.png" alt="Casal em Paris com a Torre Eiffel ao fundo" style="width:100%;display:block;margin-top:56px;object-fit:cover;aspect-ratio:16/7;vertical-align:bottom"/>
 </section>
 
 <!-- MARQUEE 2 -->
