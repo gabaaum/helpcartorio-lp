@@ -70,7 +70,10 @@ header{background:#fff;border-bottom:1px solid rgba(30,58,95,.08);padding:18px 2
 .celebracao{background:#fff;padding:80px 20px;position:relative;overflow:hidden}
 .celebracao::after{content:'';position:absolute;top:50%;right:-60px;transform:translateY(-50%);width:420px;height:420px;background:url('https://helpcartorio.com/wordpress/wp-content/uploads/2025/10/Simbolo-Help-Cartorio-modificado.png') center/contain no-repeat;opacity:.05;pointer-events:none}
 .cele-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px}
-.cele-card{background:var(--light);border-radius:12px;padding:36px 32px;border-left:3px solid var(--gold)}
+.cele-card{background:var(--light);border-radius:12px;padding:36px 32px;border-left:3px solid var(--gold);transition:transform .35s ease,box-shadow .35s ease;cursor:default;opacity:0;transform:translateY(40px)}
+.cele-card.visible{opacity:1;transform:translateY(0)}
+.cele-card:hover{transform:translateY(-8px);box-shadow:0 16px 48px rgba(30,58,95,.14)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
 .cele-num{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
 .cele-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:12px}
 .cele-text{font-size:.93rem;color:var(--muted);line-height:1.8}
@@ -445,6 +448,22 @@ function faqToggle(btn){
   document.querySelectorAll('.faq-item.open').forEach(function(el){ el.classList.remove('open') });
   if(!isOpen) item.classList.add('open');
 }
+
+// Scroll animation para cards
+var observer = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(entry.isIntersecting){
+      var cards = entry.target.querySelectorAll('.cele-card');
+      cards.forEach(function(card, i){
+        setTimeout(function(){ card.classList.add('visible'); }, i * 180);
+      });
+      observer.unobserve(entry.target);
+    }
+  });
+}, {threshold: 0.2});
+
+var celeGrid = document.querySelector('.cele-grid');
+if(celeGrid) observer.observe(celeGrid);
 </script>
 
 </body>
